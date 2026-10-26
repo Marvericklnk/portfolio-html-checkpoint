@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marvin's student portfolio: about, work, resume, and contact.">
+    <title>Marvin | Student Developer</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="page-header">
+      <a class="brand" href="#home">marvin<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="home-heading">
+        <div>
+          <p class="eyebrow">STUDENT DEVELOPER / PORTFOLIO</p>
+          <h1 id="home-heading">Learning to build.<br><span>Building to learn.</span></h1>
+          <p class="intro">Hello, I am Marvin. I am learning full-stack development at GoMyCode, one project at a time.</p>
+          <a class="button" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="hero-art">
+          <div class="monogram" aria-hidden="true">M</div>
+          <figcaption>Curiosity. Practice. Progress.</figcaption>
+        </figure>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2 id="about-heading">A little about me.</h2>
+        <p>I enjoy discovering how websites work and turning ideas into pages people can use. I am practising HTML, CSS, JavaScript, and React.</p>
+        <figure class="audio-box">
+          <figcaption><strong>A small welcome sound</strong> — an original three-note chime.</figcaption>
+          <audio controls preload="metadata" aria-label="Play the portfolio welcome chime">
+            <source src="./assets/welcome.wav" type="audio/wav">
+            Your browser does not support audio. <a href="./assets/welcome.wav">Download the welcome chime</a>.
+          </audio>
+        </figure>
+      </section>
+
+      <section id="work" aria-labelledby="work-heading">
+        <p class="eyebrow">02 / WORK</p>
+        <h2 id="work-heading">Practice made visible.</h2>
+        <div class="projects">
+          <article>
+            <span class="project-number">01</span>
+            <h3>Daylist Todo App</h3>
+            <p>A simple task tracker with task completion, filters, and browser storage.</p>
+            <a href="https://github.com/Marvericklnk/todo-app-checkpoint">View project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span class="project-number">02</span>
+            <h3>Product Gallery</h3>
+            <p>A three-card gallery with hover effects, fade-in animations, and a theme toggle.</p>
+            <a href="https://github.com/Marvericklnk/product-gallery-checkpoint">View project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span class="project-number">03</span>
+            <h3>React Product Card</h3>
+            <p>A product display assembled from separate React components and shared data.</p>
+            <a href="https://github.com/Marvericklnk/react-components-checkpoint">View project <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" aria-labelledby="resume-heading">
+        <p class="eyebrow">03 / RESUME</p>
+        <h2 id="resume-heading">Growing my toolkit.</h2>
+        <h3>Education</h3>
+        <p>Full-stack software development training at GoMyCode.</p>
+        <h3>Skills I am practising</h3>
+        <ul class="skills">
+          <li>HTML and semantic structure</li>
+          <li>CSS and responsive layouts</li>
+          <li>JavaScript and DOM events</li>
+          <li>React components and state</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2 id="contact-heading">Start a conversation.</h2>
+        <p id="form-note">This is a practice form. It validates your entries and displays a demo confirmation; it does not send a message.</p>
+        <form id="contact-form" aria-describedby="form-note">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" maxlength="100" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" maxlength="200" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="2000" placeholder="What would you like to say?" required></textarea>
+          <button type="submit">Try the contact form <span aria-hidden="true">↗</span></button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Marvin. Made with care and HTML.</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
